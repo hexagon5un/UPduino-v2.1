@@ -2,8 +2,7 @@ PROJ=audio_test
 CONSTRAINT=upduino.lpf
 
 %.json: %.v 
-	yosys -q -p "synth_ice40 -json $@" $<
-# yosys -q -p "synth_ice40 -json rgb_blink.json" rgb_blink.v
+	yosys -q -p "synth_ice40 -json $@" $< 
 
 %.asc: %.json 
 	nextpnr-ice40 --up5k --package sg48 --json $< --pcf $(CONSTRAINT) --asc $@   
