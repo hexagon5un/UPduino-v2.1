@@ -1,4 +1,4 @@
-PROJ=rgb_blink
+PROJ=audio_test
 CONSTRAINT=upduino.lpf
 
 %.json: %.v 

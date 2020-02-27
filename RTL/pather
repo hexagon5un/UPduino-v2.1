@@ -1,0 +1,1 @@
+export PATH=~/UPduino-v2.1/RTL/fomu-toolchain-linux_x86_64-v1.5.5/bin/:$PATH
